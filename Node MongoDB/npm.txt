@@ -1,0 +1,4 @@
+ 1)package.json : - "for creating this file we have to install through npm (npm init -y)"
+
+ 2)npm install --save mongodb
+ 3) npm install -g nodemon
