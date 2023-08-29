@@ -51,11 +51,17 @@ ul li:hover a{
 .active a{
     color: #e9be11;
 }
+[class*="fa-bars"]{
+    display: none;
+    color: #fff;
+    font-size: 20px;
+}
 @media (max-width:768px){
-    nav, ul{
+    ul{
         flex-direction: column;
         gap: 20px;
         width: 100%;
+        visibility: hidden;
     }
     nav{
         align-items: start;
@@ -65,6 +71,11 @@ ul li:hover a{
     }
     h1 [class*="fa-"]{
         font-size: 1.3em;
+    }
+    [class*="fa-bars"]{
+        display: block;
+        font-size: 1.3em;
+        color: #fff;
     }
 }
 h1 [class*="fa-"]{
