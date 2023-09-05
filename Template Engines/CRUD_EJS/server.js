@@ -2,12 +2,15 @@ const express = require('express')
 require('dotenv').config() //config settings to access the variables of .env file
 
 const cors = require('cors') //cross origin resourse sharing(to avoid cors effect) //cors effect is to blocking ports
-const PORT = process.env.PORT //accessing variables from .env file
+const PORT = process.env.PORT || 3452 //accessing variables from .env file
 //import database
 const connectDatabase = require('./database/connect')
-
+ 
  
 const app = express()
+
+//view folder is static
+app.use(express.static('./view'))
 
 //template engines setting
 app.set('view engine', 'ejs') //view engine is a keyword

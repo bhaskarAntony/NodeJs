@@ -1,7 +1,7 @@
 //Buffer module
 //memory allocation
 
-const buff = Buffer.alloc(5); // we are allocating 5 memory locations every memory loaction have 2 bits
+const buff = Buffer.alloc(5); // we are allocating 5 memory locations every memory location have 2 bits
 console.log('safe memory = ', buff) //output : <Buffer 00 00 00 00 00 > => 5 memory locations
 
 //unsafe memory

@@ -17,6 +17,6 @@ server.on('request', (req, res)=>{
     })
 })
 server.listen(port, ()=>{
-    console.log('server is running @ http://localhost:', port)
+    console.log('server is running @ http://localhost:',port)
 })
 //otput will print in browsers

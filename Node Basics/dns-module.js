@@ -1,7 +1,7 @@
 //dns => domine name system
 //it will gives the ip address of that url
 const dns = require('dns')
-dns.lookup("www.facebook.com", function(err, address, family){
+dns.lookup("www.facebook.com", (err, address, family)=>{
     if(err) console.log(err)
     console.log('address = ', address)
     console.log('family = ', family)
